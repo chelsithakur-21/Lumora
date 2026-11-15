@@ -1,16 +1,101 @@
-# React + Vite
+# Lumora – Personal Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Lumora** is a full-stack personal finance dashboard built to help users track their income, expenses, savings, and financial goals in one place.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dashboard:** Overview of income, expenses, balance, and savings.
+- **Transaction Management:** Add and view income and expense transactions.
+- **Financial Analytics:** Visual representation of financial activity.
+- **Savings Goals:** Create and track personal financial goals.
+- **Add Savings:** Increase the saved amount towards a goal.
+- **Deduct Savings:** Reduce the saved amount while maintaining goal progress.
+- **Settings:** View account information.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React.js, JavaScript, HTML, CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Tools:** VS Code, Git, GitHub
 
-## Expanding the Oxlint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```text
+Lumora/
+├── public/
+├── server/
+│   ├── models/
+│   │   ├── Transaction.js
+│   │   └── User.js
+│   ├── server.js
+│   └── package.json
+├── src/
+│   ├── components/
+│   │   ├── Sidebar.jsx
+│   │   └── TransactionModal.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/chelsithakur-21/Lumora.git
+cd Lumora
+```
+
+### 2. Install frontend dependencies
+
+```bash
+npm install
+```
+
+### 3. Install backend dependencies
+
+```bash
+cd server
+npm install
+```
+
+### 4. Start the backend
+
+```bash
+node server.js
+```
+
+### 5. Start the frontend
+
+Open a second terminal in the project root:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed by Vite.
+
+**Prerequisite:** Make sure MongoDB is running and the backend database configuration is correct.
+
+## Future Enhancements
+
+- Live deployment
+- Enhanced financial analytics
+- Secure user authentication
+- AI-powered financial insights
+
+## Author
+
+**Chelsi Thakur**
+
+[GitHub Profile](https://github.com/chelsithakur-21)
+
+---
+
+*Lumora – Take control of your finances.*
